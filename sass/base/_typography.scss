@@ -1,0 +1,13 @@
+.paragraph {
+  line-height: 2.2rem;
+  font-size: 1.4rem;
+  &--centered {
+    text-align: center;
+  }
+}
+
+.title-1 {
+  font-size: 2rem;
+  line-height: 3rem;
+  text-align: center;
+}
