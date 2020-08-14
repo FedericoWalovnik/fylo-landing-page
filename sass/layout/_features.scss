@@ -1,3 +1,38 @@
 .features {
-  grid-column: center-start / center-end;
+  padding: 14rem 0;
+  width: 80vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 40%);
+  justify-content: space-evenly;
+  justify-items: center;
+  align-items: center;
+  grid-gap: 3rem;
+  margin: 0 auto;
+
+  @include respond(phone) {
+    grid-template-columns: repeat(auto-fit, 80%);
+    padding: 14rem 2rem;
+  }
+
+  &__feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    @include respond(phone) {
+      padding: 4rem 0;
+    }
+  }
+
+  &__icon {
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    padding: 1rem 0;
+    font-size: 2rem;
+  }
 }

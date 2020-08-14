@@ -1,0 +1,33 @@
+.description {
+  display: flex;
+  padding-bottom: 14rem;
+  align-content: center;
+  align-items: center;
+
+  @include respond(phone) {
+    flex-direction: column;
+  }
+
+  &__text {
+    width: 35%;
+
+    @include respond(phone) {
+      width: 90%;
+      padding-top: 3rem;
+    }
+  }
+
+  &__paragraph {
+    padding-bottom: 2rem;
+  }
+
+  &__illustration {
+    align-self: center;
+    width: 55%;
+    padding: 0 5%;
+
+    @include respond(phone) {
+      width: 100%;
+    }
+  }
+}

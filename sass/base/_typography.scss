@@ -1,13 +1,20 @@
 .paragraph {
-  line-height: 2.2rem;
-  font-size: 1.4rem;
+  line-height: 2.6rem;
+  font-size: $font-general;
   &--centered {
     text-align: center;
   }
 }
 
 .title-1 {
-  font-size: 2rem;
-  line-height: 3rem;
+  font-size: $font-title;
+  line-height: 4rem;
   text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+.title-2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: $font-title;
+  line-height: 4rem;
 }

@@ -1,0 +1,18 @@
+.btn:link,
+.btn:visited {
+  background-image: linear-gradient(to bottom right, $cyan-cta, $blue-cta);
+  color: $white-neutral;
+  font-weight: 700;
+  padding: 0.2rem 8rem;
+  border-radius: 100px;
+  text-decoration: none;
+}
+
+.btn-inline:link,
+.btn-inline:visited {
+  color: $cyan-cta;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px solid;
+  font-size: $font-general;
+}
