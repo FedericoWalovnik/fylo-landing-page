@@ -1,0 +1,77 @@
+.footer {
+  background-color: $dark-blue-footer;
+  padding: 30rem 10rem 5rem 10rem;
+  margin-top: -16rem;
+  z-index: -2;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+  &__directions {
+    display: flex;
+    margin-right: 1rem;
+  }
+
+  &__info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    padding-top: 3rem;
+
+    @include respond(tab-port) {
+      grid-template-columns: repeat(1, 100%);
+    }
+  }
+
+  &__logo {
+    width: 100%;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: center;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  }
+
+  &__nav ul {
+    margin-right: 3rem;
+    list-style: none;
+  }
+
+  &__tel {
+    display: flex;
+    flex-direction: column;
+
+    & div {
+      padding-bottom: 2rem;
+      display: flex;
+    }
+  }
+
+  &__email {
+    display: flex;
+  }
+
+  &__icon {
+    padding-right: 1rem;
+  }
+
+  &__attribution {
+    padding-top: 6rem;
+    margin: 0 auto;
+  }
+
+  &__social i {
+    padding: 1rem;
+    font-size: 2rem;
+  }
+
+  &__links:link,
+  &__links:visited {
+    color: $white-neutral;
+  }
+}

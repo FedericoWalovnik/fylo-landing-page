@@ -16,3 +16,17 @@
   border-bottom: 1px solid;
   font-size: $font-general;
 }
+
+.btn--2:link,
+.btn--2:visited {
+  background-image: linear-gradient(to bottom right, $cyan-cta, $blue-cta);
+  color: $white-neutral;
+  font-weight: 700;
+  padding: 1rem 3rem;
+  border-radius: 100px;
+  text-decoration: none;
+
+  @include respond(tab-port) {
+    width: 110%;
+  }
+}

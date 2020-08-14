@@ -1,0 +1,41 @@
+.form {
+  align-self: center;
+  background-color: $dark-blue-1;
+  width: 60vw;
+  padding: 5rem 10rem;
+  border-radius: 1rem;
+  text-align: center;
+
+  @include respond(tab-port) {
+    width: 90vw;
+  }
+
+  &__paragraph {
+    padding: 3rem 1rem;
+  }
+
+  &__inputbtn {
+    display: flex;
+    justify-content: center;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__input {
+    justify-self: center;
+    padding: 1rem 3rem;
+    border-radius: 100px;
+    width: 50%;
+    margin-right: 2rem;
+    border: none;
+
+    @include respond(tab-port) {
+      width: 110%;
+      padding: 2rem 3rem;
+      margin-bottom: 2.5rem;
+    }
+  }
+}

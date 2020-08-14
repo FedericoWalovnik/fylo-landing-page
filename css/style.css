@@ -7,6 +7,9 @@
 .u-padding-top-medium {
   padding-top: 2rem; }
 
+.u-margin-top-section {
+  margin-top: 15rem; }
+
 /*
 0 - 600px:      phone
 600 - 900px:    tablet portrait
@@ -59,15 +62,24 @@ body {
     text-align: center; }
 
 .title-1 {
-  font-size: 2.7rem;
+  font-size: 3.6rem;
   line-height: 4rem;
   text-align: center;
   font-family: 'Raleway', sans-serif; }
 
 .title-2 {
   font-family: 'Raleway', sans-serif;
-  font-size: 2.7rem;
-  line-height: 4rem; }
+  font-size: 3.6rem;
+  line-height: 4.3rem; }
+
+.title-3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 3rem;
+  line-height: 3.5rem; }
+
+.paragraph--small {
+  line-height: 2rem;
+  font-size: 1.5rem; }
 
 .header {
   background-image: url(../images/bg-curvy-desktop.svg);
@@ -147,10 +159,10 @@ body {
         width: 100%; } }
 
 .testimonials {
-  padding: 2rem 16rem;
+  padding: 2rem 8rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 4rem; }
+  grid-gap: 3rem; }
   @media only screen and (max-width: 75em) {
     .testimonials {
       grid-template-columns: repeat(1, 80vw);
@@ -242,3 +254,98 @@ body {
   padding-bottom: 2px;
   border-bottom: 1px solid;
   font-size: 1.7rem; }
+
+.btn--2:link,
+.btn--2:visited {
+  background-image: linear-gradient(to bottom right, #65e2d9, #339ecc);
+  color: white;
+  font-weight: 700;
+  padding: 1rem 3rem;
+  border-radius: 100px;
+  text-decoration: none; }
+  @media only screen and (max-width: 56.25em) {
+    .btn--2:link,
+    .btn--2:visited {
+      width: 110%; } }
+
+.form {
+  align-self: center;
+  background-color: #1c2431;
+  width: 60vw;
+  padding: 5rem 10rem;
+  border-radius: 1rem;
+  text-align: center; }
+  @media only screen and (max-width: 56.25em) {
+    .form {
+      width: 90vw; } }
+  .form__paragraph {
+    padding: 3rem 1rem; }
+  .form__inputbtn {
+    display: flex;
+    justify-content: center; }
+    @media only screen and (max-width: 56.25em) {
+      .form__inputbtn {
+        flex-direction: column;
+        align-items: center; } }
+  .form__input {
+    justify-self: center;
+    padding: 1rem 3rem;
+    border-radius: 100px;
+    width: 50%;
+    margin-right: 2rem;
+    border: none; }
+    @media only screen and (max-width: 56.25em) {
+      .form__input {
+        width: 110%;
+        padding: 2rem 3rem;
+        margin-bottom: 2.5rem; } }
+
+.footer {
+  background-color: #0b1523;
+  padding: 30rem 10rem 5rem 10rem;
+  margin-top: -16rem;
+  z-index: -2;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column; }
+  .footer__directions {
+    display: flex;
+    margin-right: 1rem; }
+  .footer__info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    padding-top: 3rem; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__info {
+        grid-template-columns: repeat(1, 100%); } }
+  .footer__logo {
+    width: 100%; }
+  .footer__nav {
+    display: flex;
+    justify-content: center; }
+    @media only screen and (max-width: 56.25em) {
+      .footer__nav {
+        flex-direction: column;
+        justify-content: flex-start; } }
+  .footer__nav ul {
+    margin-right: 3rem;
+    list-style: none; }
+  .footer__tel {
+    display: flex;
+    flex-direction: column; }
+    .footer__tel div {
+      padding-bottom: 2rem;
+      display: flex; }
+  .footer__email {
+    display: flex; }
+  .footer__icon {
+    padding-right: 1rem; }
+  .footer__attribution {
+    padding-top: 6rem;
+    margin: 0 auto; }
+  .footer__social i {
+    padding: 1rem;
+    font-size: 2rem; }
+  .footer__links:link, .footer__links:visited {
+    color: white; }

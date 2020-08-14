@@ -16,5 +16,16 @@
 .title-2 {
   font-family: 'Raleway', sans-serif;
   font-size: $font-title;
-  line-height: 4rem;
+  line-height: 4.3rem;
+}
+
+.title-3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: $font-subtitle;
+  line-height: 3.5rem;
+}
+
+.paragraph--small {
+  line-height: 2rem;
+  font-size: 1.5rem;
 }

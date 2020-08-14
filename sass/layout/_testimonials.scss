@@ -1,8 +1,8 @@
 .testimonials {
-  padding: 2rem 16rem;
+  padding: 2rem 8rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 4rem;
+  grid-gap: 3rem;
 
   @include respond(tab-land) {
     grid-template-columns: repeat(1, 80vw);
