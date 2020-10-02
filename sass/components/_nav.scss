@@ -4,6 +4,10 @@
   justify-content: space-between;
   margin: 4rem;
 
+  @include respond(phone) {
+    margin: 2rem;
+  }
+
   &__logo {
     height: 4rem;
   }
@@ -17,6 +21,11 @@
     list-style: none;
     font-family: 'Raleway', sans-serif;
     font-size: 1.7rem;
+    padding: 1rem 3rem;
+
+    @include respond(phone) {
+      padding: 1rem 1.5rem;
+    }
   }
 
   &__link,
@@ -24,10 +33,13 @@
   &__link:visited {
     color: $white-neutral;
     text-decoration: none;
-    padding: 1rem 3rem;
 
     @include respond(phone) {
       padding: 1rem;
     }
+  }
+
+  &__link:hover &__item {
+    border-bottom: solid 1px #fff;
   }
 }

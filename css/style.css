@@ -221,6 +221,9 @@ body {
   align-items: center;
   justify-content: space-between;
   margin: 4rem; }
+  @media (max-width: 37.5em) {
+    .nav {
+      margin: 2rem; } }
   .nav__logo {
     height: 4rem; }
   .nav__links {
@@ -229,14 +232,19 @@ body {
   .nav__item {
     list-style: none;
     font-family: 'Raleway', sans-serif;
-    font-size: 1.7rem; }
+    font-size: 1.7rem;
+    padding: 1rem 3rem; }
+    @media (max-width: 37.5em) {
+      .nav__item {
+        padding: 1rem 1.5rem; } }
   .nav__link, .nav__link:link, .nav__link:visited {
     color: white;
-    text-decoration: none;
-    padding: 1rem 3rem; }
+    text-decoration: none; }
     @media (max-width: 37.5em) {
       .nav__link, .nav__link:link, .nav__link:visited {
         padding: 1rem; } }
+  .nav__link:hover .nav__item {
+    border-bottom: solid 1px #fff; }
 
 .btn:link,
 .btn:visited {
